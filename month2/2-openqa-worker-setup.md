@@ -204,14 +204,13 @@ getwd cache = true
         read only = No
         inherit acls = Yes
 [openqa_share]
-path = /var/lib/openqa/share
-available = yes
-valid users = root
-read only = no
-browsable = yes
-public = yes
-writable = yes
-
+        path = /var/lib/openqa/share
+        available = yes
+        valid users = root
+        read only = no
+        browsable = yes
+        public = yes
+        writable = yes
 ```
 
 一些命令：
