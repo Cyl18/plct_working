@@ -2,7 +2,7 @@
 
 - [docs/#66](https://github.com/ruyisdk/docs/pull/66) 更新文档：使用 gcc 编译 coremark；新增文档：使用 meson/cmake 集成，使用 qemu 和 llvm；一些细节修改
 - 配置了 openqa-worker 服务器，网络与 webui 连接
-- 新建仓库 [Cyl18/plct-openqa-ruyisdk-ide](https://github.com/Cyl18/plct-openqa-ruyisdk-ide)
+- 新建仓库 [Cyl18/plct-openqa-ruyisdk-ide](https://github.com/Cyl18/plct-openqa-ruyisdk-ide) 包含 openQA 的测试用例以及一些用来编写测试用例的辅助脚本
 - 编写了 ruyisdk IDE 的启动的测试用例
 - 配置了 openQA 的 riscv openEuler 24.03 LTS 并能在 openQA 上触发启动系统的测试用例
 - 配置了 openQA 的 Ubuntu 22.04 并能在 openQA 上触发启动系统的测试用例
