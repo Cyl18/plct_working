@@ -9,3 +9,5 @@
 - 通过 ruyi ide 启动测试 [tests/238](https://openqa.inuyasha.love/tests/238)
 - 提出 issue [ruyi/261](https://github.com/ruyisdk/ruyi/issues/261) 在 Arch Linux 下打包会因为 Poetry 版本没有 2.0 而报错
 - 测试报告 <https://gitee.com/yunxiangluo/ruyisdk-test/pulls/61>
+
+测试可以通过以下命令触发： `openqa-cli api -X POST --apikey $OPENQA_API_KEY --apisecret $OPENQA_API_SECRET isos async=0 DISTRI=plct-openqa-ruyisdk-ide FLAVOR=ubuntu-22.04 ARCH=x86_64 VERSION=1 RUYI_SDK_IDE_VERSION=0.0.3`
