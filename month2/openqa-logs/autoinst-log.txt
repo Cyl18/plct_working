@@ -1,0 +1,181 @@
+[2025-01-25T07:06:29.715709Z] [info] +++ setup notes +++
+[2025-01-25T07:06:29.715926Z] [info] Running on openqa-worker-x86-cyl18:2 (Linux 5.15.158-2-pve #1 SMP PVE 5.15.158-2 (2024-07-26T13:11Z) x86_64)
+[2025-01-25T07:06:29.854265Z] [debug] +++ worker notes +++
+[37m[2025-01-25T07:06:30.084 UTC] [debug] Current version is 4.6.1632799442.f77d4e1-1build2 [interface v23]
+[0mfatal: detected dubious ownership in repository at '/var/lib/openqa/share/tests/plct-openqa-ruyisdk-ide'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /var/lib/openqa/share/tests/plct-openqa-ruyisdk-ide
+[37m[2025-01-25T07:06:30.323 UTC] [debug] git hash in plct-openqa-ruyisdk-ide: UNKNOWN
+[0m[37m[2025-01-25T07:06:34.218 UTC] [debug] parse_vars (variables parsed from YAML schedule):
+[0m[37m[2025-01-25T07:06:34.218 UTC] [debug] --- {}
+  
+[0m[37m[2025-01-25T07:06:34.218 UTC] [debug] ---
+  - check_ubuntu_desktop
+  - launch_ruyi_ide
+  
+[0m[37m[2025-01-25T07:06:34.218 UTC] [debug] parse_test_suite_data (data parsed from YAML test_data):
+[0m[37m[2025-01-25T07:06:34.218 UTC] [debug] --- {}
+  
+[0m[37m[2025-01-25T07:06:35.080 UTC] [debug] scheduling check_ubuntu_desktop tests/check_ubuntu_desktop.pm
+[0m[37m[2025-01-25T07:06:35.215 UTC] [debug] scheduling launch_ruyi_ide tests/launch_ruyi_ide.pm
+[0m[2025-01-25T07:06:35.219 UTC] [info] cmdsrv: daemon reachable under http://*:20023/qxk8YZFufEGNErh1/
+[2025-01-25T07:06:35.220 UTC] [info] Listening at "http://[::]:20023"
+Web application available at http://[::]:20023
+fatal: detected dubious ownership in repository at '/var/lib/openqa/share/tests/plct-openqa-ruyisdk-ide'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /var/lib/openqa/share/tests/plct-openqa-ruyisdk-ide
+[37m[2025-01-25T07:06:35.681 UTC] [debug] git hash in plct-openqa-ruyisdk-ide/products/plct-openqa-ruyisdk-ide/needles: UNKNOWN
+[0m[37m[2025-01-25T07:06:35.681 UTC] [debug] init needles from plct-openqa-ruyisdk-ide/products/plct-openqa-ruyisdk-ide/needles
+[0m[37m[2025-01-25T07:06:36.245 UTC] [debug] loaded 4 needles
+[0m[37m[2025-01-25T07:06:36.247 UTC] [debug] Blocking SIGCHLD and SIGTERM
+[0m[37m[2025-01-25T07:06:36.281 UTC] [debug] Unblocking SIGCHLD and SIGTERM
+[0m[37m[37m[2025-01-25T07:06:36.326 UTC] [debug] 48652: channel_out 16, channel_in 15
+[2025-01-25T07:06:36.326 UTC] [debug] Blocking SIGCHLD and SIGTERM
+[0m[0m[37m[2025-01-25T07:06:36.361 UTC] [debug] Unblocking SIGCHLD and SIGTERM
+[0m[37m[2025-01-25T07:06:36.362 UTC] [debug] 48704: cmdpipe 14, rsppipe 17
+[0m[37m[2025-01-25T07:06:36.362 UTC] [debug] started mgmt loop with pid 48704
+[0m[37m[2025-01-25T07:06:36.400 UTC] [debug] qemu version detected: 9.2.0
+[0m[33m[2025-01-25T07:06:36.400 UTC] [info] ::: backend::qemu::start_qemu: UEFI_PFLASH and BIOS are deprecated. It is recommended to use UEFI_PFLASH_CODE and UEFI_PFLASH_VARS instead. These variables can be auto-discovered, try to just remove UEFI_PFLASH.
+[0m[37m[2025-01-25T07:06:36.401 UTC] [debug] running timeout 30 /usr/bin/chattr -f +C /var/lib/openqa/pool/2/raid
+[0m[37m[2025-01-25T07:06:36.406 UTC] [debug] Configuring storage controllers and block devices
+[0m[37m[2025-01-25T07:06:36.406 UTC] [debug] running /usr/bin/qemu-img info --output=json /var/lib/openqa/pool/2/jammy-server-cloudimg-amd64-modified.qcow2
+[0m[37m[2025-01-25T07:06:36.412 UTC] [debug] running /usr/bin/qemu-img info --output=json /usr/share/qemu/ovmf-x86_64.bin
+[0m[37m[2025-01-25T07:06:36.419 UTC] [debug] Initializing block device images
+[0m[37m[2025-01-25T07:06:36.419 UTC] [debug] running /usr/bin/qemu-img create -f qcow2 -F qcow2 -b /var/lib/openqa/pool/2/jammy-server-cloudimg-amd64-modified.qcow2 /var/lib/openqa/pool/2/raid/hd0-overlay0 13098811392
+[0m[37m[2025-01-25T07:06:36.439 UTC] [debug] Formatting '/var/lib/openqa/pool/2/raid/hd0-overlay0', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=13098811392 backing_file=/var/lib/openqa/pool/2/jammy-server-cloudimg-amd64-modified.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+[0m[37m[2025-01-25T07:06:36.439 UTC] [debug] running /usr/bin/qemu-img create -f qcow2 -F raw -b /usr/share/qemu/ovmf-x86_64.bin /var/lib/openqa/pool/2/raid/pflash-overlay0 2097152
+[0m[37m[2025-01-25T07:06:36.465 UTC] [debug] Formatting '/var/lib/openqa/pool/2/raid/pflash-overlay0', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=2097152 backing_file=/usr/share/qemu/ovmf-x86_64.bin backing_fmt=raw lazy_refcounts=off refcount_bits=16
+[0m[37m[2025-01-25T07:06:36.465 UTC] [debug] init_blockdev_images: Finished creating block devices
+[0m[37m[2025-01-25T07:06:36.465 UTC] [debug] starting: /usr/bin/qemu-system-x86_64 -only-migratable -chardev ringbuf,id=serial0,logfile=serial0,logappend=on -serial chardev:serial0 -audiodev none,id=snd0 -device intel-hda -device hda-output,audiodev=snd0 -global isa-fdc.fdtypeA=none -m 4096 -cpu qemu64 -netdev user,id=qanet0 -device virtio-net,netdev=qanet0,mac=52:54:00:12:34:56 -device usb-ehci -device usb-tablet -smp 4 -enable-kvm -no-shutdown -vnc :92,share=force-shared -device virtio-serial -chardev pipe,id=virtio_console,path=virtio_console,logfile=virtio_console.log,logappend=on -device virtconsole,chardev=virtio_console,name=org.openqa.console.virtio_console -chardev pipe,id=virtio_console1,path=virtio_console1,logfile=virtio_console1.log,logappend=on -device virtconsole,chardev=virtio_console1,name=org.openqa.console.virtio_console1 -chardev socket,path=qmp_socket,server,nowait,id=qmp_socket,logfile=qmp_socket.log,logappend=on -qmp chardev:qmp_socket -S -vga virtio -device VGA,xres=1024,yres=768 -device usb-kbd -smbios type=1,serial=ds='nocloud;s=http://192.168.0.131:8000/' -boot order=c -device qemu-xhci -device virtio-scsi-pci,id=scsi0 -blockdev driver=file,node-name=hd0-overlay0-file,filename=/var/lib/openqa/pool/2/raid/hd0-overlay0,cache.no-flush=on -blockdev driver=qcow2,node-name=hd0-overlay0,file=hd0-overlay0-file,cache.no-flush=on -device virtio-blk,id=hd0-device,drive=hd0-overlay0,bootindex=0,serial=hd0 -drive id=pflash-overlay0,if=pflash,file=/var/lib/openqa/pool/2/raid/pflash-overlay0
+[0m[37m[2025-01-25T07:06:36.468 UTC] [debug] Waiting for 0 attempts
+[0m[37m[2025-01-25T07:06:37.469 UTC] [debug] Waiting for 1 attempts
+[0m[37m[2025-01-25T07:06:38.469 UTC] [debug] Finished after 2 attempts
+[0m[37m[2025-01-25T07:06:38.478 UTC] [debug] Establishing VNC connection to localhost:5992
+[0m[37m[2025-01-25T07:06:38.530 UTC] [debug] pointer type 0 0 640 480 -257
+[0m[37m[2025-01-25T07:06:38.530 UTC] [debug] led state 0 1 1 -261
+[0m[37m[2025-01-25T07:06:38.535 UTC] [debug] Start CPU
+[0m[37m[2025-01-25T07:06:38.535 UTC] [debug] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"45730","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_CONNECTED","timestamp":{"microseconds":479218,"seconds":1737788798}}
+[0m[37m[2025-01-25T07:06:38.535 UTC] [debug] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"45730","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_INITIALIZED","timestamp":{"microseconds":480098,"seconds":1737788798}}
+[0m[37m[2025-01-25T07:06:38.535 UTC] [debug] EVENT {"event":"RESUME","timestamp":{"microseconds":535251,"seconds":1737788798}}
+[0mGOT GO
+
+[37m[2025-01-25T07:06:38.538 UTC] [debug] QEMU: QEMU emulator version 9.2.0
+[0m[37m[2025-01-25T07:06:38.538 UTC] [debug] QEMU: Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers
+[0m[31m[2025-01-25T07:06:38.538 UTC] [warn] !!! : qemu-system-x86_64: -chardev socket,path=qmp_socket,server,nowait,id=qmp_socket,logfile=qmp_socket.log,logappend=on: warning: short-form boolean option 'server' deprecated
+[0m[37m[2025-01-25T07:06:38.538 UTC] [debug] QEMU: Please use server=on instead
+[0m[31m[2025-01-25T07:06:38.538 UTC] [warn] !!! : qemu-system-x86_64: -chardev socket,path=qmp_socket,server,nowait,id=qmp_socket,logfile=qmp_socket.log,logappend=on: warning: short-form boolean option 'nowait' deprecated
+[0m[37m[2025-01-25T07:06:38.538 UTC] [debug] QEMU: Please use wait=off instead
+[0m[37m[2025-01-25T07:06:38.541 UTC] [debug] Snapshots are supported
+[0m[1;34m[2025-01-25T07:06:38.541 UTC] [debug] ||| starting check_ubuntu_desktop tests/check_ubuntu_desktop.pm
+[0m[37m[2025-01-25T07:06:38.543 UTC] [debug] Starting test...
+[0m[37m[2025-01-25T07:06:38.544 UTC] [debug] Checking if desktop is shown
+[0m[2025-01-25T07:06:38.544 UTC] [debug] tests/check_ubuntu_desktop.pm:18 called testapi::assert_screen
+[2025-01-25T07:06:38.544 UTC] [debug] <<< testapi::assert_screen(mustmatch="desktop-ubuntu", timeout=240)
+[37m[2025-01-25T07:06:40.020 UTC] [debug] load of plct-openqa-ruyisdk-ide/products/plct-openqa-ruyisdk-ide/needles/desktop-ubuntu.png took 0.48 seconds
+[0m[37m[2025-01-25T07:06:40.023 UTC] [debug] no match: 47999.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:40.537 UTC] [debug] no change: 47998.0s
+[0m[37m[2025-01-25T07:06:41.540 UTC] [debug] no match: 47997.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:41.540 UTC] [debug] pointer type 1 0 1280 800 -257
+[0m[37m[2025-01-25T07:06:42.540 UTC] [debug] no match: 47996.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:43.569 UTC] [debug] no match: 47995.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:44.541 UTC] [debug] no match: 47994.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:45.542 UTC] [debug] no match: 47993.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:46.544 UTC] [debug] no match: 47992.0s, best candidate: desktop-ubuntu (0.00)
+[0m[37m[2025-01-25T07:06:47.545 UTC] [debug] no match: 47991.0s, best candidate: desktop-ubuntu (0.00)
+[0m[32m[2025-01-25T07:06:48.833 UTC] [debug] >>> testapi::_handle_found_needle: found desktop-ubuntu, similarity 1.00 @ 8/33
+[0m[37m[2025-01-25T07:06:48.833 UTC] [debug] Login test completed.
+[0m[37m[2025-01-25T07:06:48.836 UTC] [debug] ||| finished check_ubuntu_desktop tests (runtime: 10 s)
+[0m[1;34m[2025-01-25T07:06:48.836 UTC] [debug] ||| starting launch_ruyi_ide tests/launch_ruyi_ide.pm
+[0m[37m[2025-01-25T07:06:48.836 UTC] [debug] Starting test...
+[0m[2025-01-25T07:06:48.836 UTC] [debug] tests/launch_ruyi_ide.pm:13 called testapi::send_key
+[2025-01-25T07:06:48.836 UTC] [debug] <<< testapi::send_key(key="alt-f2", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:06:49.171 UTC] [debug] tests/launch_ruyi_ide.pm:14 called testapi::wait_still_screen
+[2025-01-25T07:06:49.171 UTC] [debug] <<< testapi::wait_still_screen(timeout=30, stilltime=2, similarity_level=47)
+[32m[2025-01-25T07:06:51.178 UTC] [debug] >>> testapi::wait_still_screen: detected same image for 2 seconds, last detected similarity is 1000000
+[0m[2025-01-25T07:06:51.179 UTC] [debug] tests/launch_ruyi_ide.pm:16 called testapi::type_string
+[2025-01-25T07:06:51.179 UTC] [debug] <<< testapi::type_string(string="gnome-terminal", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:51.654 UTC] [debug] tests/launch_ruyi_ide.pm:18 called testapi::send_key
+[2025-01-25T07:06:51.654 UTC] [debug] <<< testapi::send_key(key="ret", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:06:51.922 UTC] [debug] tests/launch_ruyi_ide.pm:21 called testapi::wait_screen_change
+[2025-01-25T07:06:51.922 UTC] [debug] <<< testapi::wait_screen_change(timeout="0.0.3", similarity_level=50)
+Argument "0.0.3" isn't numeric in multiplication (*) at /usr/lib/os-autoinst/bmwqemu.pm line 322.
+[32m[2025-01-25T07:06:51.984 UTC] [debug] >>> testapi::wait_screen_change: timed out
+[0m[2025-01-25T07:06:51.984 UTC] [debug] tests/launch_ruyi_ide.pm:22 called testapi::type_string
+[2025-01-25T07:06:51.984 UTC] [debug] <<< testapi::type_string(string="wget https://mirror.iscas.ac.cn/ruyisdk/ide/0.0.3/ruyisdk-0.0.3-linux.gtk.x86_64.tar.gz", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:54.972 UTC] [debug] tests/launch_ruyi_ide.pm:23 called testapi::send_key
+[2025-01-25T07:06:54.972 UTC] [debug] <<< testapi::send_key(key="ret", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:06:55.240 UTC] [debug] tests/launch_ruyi_ide.pm:25 called testapi::type_string
+[2025-01-25T07:06:55.240 UTC] [debug] <<< testapi::type_string(string="tar -zxvf ruyisdk-0.0.3-linux.gtk.x86_64.tar.gz", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:56.855 UTC] [debug] tests/launch_ruyi_ide.pm:26 called testapi::send_key
+[2025-01-25T07:06:56.855 UTC] [debug] <<< testapi::send_key(key="ret", do_wait=0, wait_screen_change=0)
+[2025-01-25T07:06:57.122 UTC] [debug] tests/launch_ruyi_ide.pm:27 called testapi::type_string
+[2025-01-25T07:06:57.123 UTC] [debug] <<< testapi::type_string(string="cd ruyisdk", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:57.462 UTC] [debug] tests/launch_ruyi_ide.pm:28 called testapi::send_key
+[2025-01-25T07:06:57.462 UTC] [debug] <<< testapi::send_key(key="ret", do_wait=0, wait_screen_change=0)
+[2025-01-25T07:06:57.730 UTC] [debug] tests/launch_ruyi_ide.pm:30 called testapi::type_string
+[2025-01-25T07:06:57.730 UTC] [debug] <<< testapi::type_string(string="echo OKAY | sudo tee /dev/ttyS0", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:58.889 UTC] [debug] tests/launch_ruyi_ide.pm:31 called testapi::send_key
+[2025-01-25T07:06:58.890 UTC] [debug] <<< testapi::send_key(key="ret", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:06:59.157 UTC] [debug] tests/launch_ruyi_ide.pm:33 called testapi::type_string
+[2025-01-25T07:06:59.158 UTC] [debug] <<< testapi::type_string(string="./ruyisdk", max_interval=250, wait_screen_changes=0, wait_still_screen=0, timeout=30, similarity_level=47)
+[2025-01-25T07:06:59.466 UTC] [debug] tests/launch_ruyi_ide.pm:34 called testapi::send_key
+[2025-01-25T07:06:59.466 UTC] [debug] <<< testapi::send_key(key="ret", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:06:59.734 UTC] [debug] tests/launch_ruyi_ide.pm:38 called testapi::wait_serial
+[2025-01-25T07:06:59.734 UTC] [debug] <<< testapi::wait_serial(quiet=undef, buffer_size=undef, record_output=undef, timeout=200, expect_not_found=0, no_regex=0, regexp="OKAY")
+[32m[2025-01-25T07:08:45.855 UTC] [debug] >>> testapi::wait_serial: OKAY: ok
+[0m[2025-01-25T07:08:45.855 UTC] [debug] tests/launch_ruyi_ide.pm:40 called testapi::assert_screen
+[2025-01-25T07:08:45.855 UTC] [debug] <<< testapi::assert_screen(mustmatch="eclipse-select-workspace", timeout=240)
+[37m[2025-01-25T07:08:46.250 UTC] [debug] load of plct-openqa-ruyisdk-ide/products/plct-openqa-ruyisdk-ide/needles/eclipse-select-workspace.png took 0.39 seconds
+[0m[37m[2025-01-25T07:08:46.253 UTC] [debug] no match: 47999.9s, best candidate: eclipse-select-workspace (0.00)
+[0m[37m[2025-01-25T07:08:46.858 UTC] [debug] no change: 47998.9s
+[0m[37m[2025-01-25T07:08:47.861 UTC] [debug] no match: 47997.9s, best candidate: eclipse-select-workspace (0.00)
+[0m[37m[2025-01-25T07:08:48.860 UTC] [debug] no change: 47996.9s
+[0m[32m[2025-01-25T07:08:50.152 UTC] [debug] >>> testapi::_handle_found_needle: found eclipse-select-workspace, similarity 1.00 @ 802/523
+[0m[2025-01-25T07:08:50.152 UTC] [debug] tests/launch_ruyi_ide.pm:41 called testapi::send_key
+[2025-01-25T07:08:50.152 UTC] [debug] <<< testapi::send_key(key="ret", wait_screen_change=0, do_wait=0)
+[2025-01-25T07:08:50.421 UTC] [debug] tests/launch_ruyi_ide.pm:43 called testapi::assert_screen
+[2025-01-25T07:08:50.421 UTC] [debug] <<< testapi::assert_screen(mustmatch="ruyi-ide-mainmenu", timeout=240)
+[37m[2025-01-25T07:08:51.375 UTC] [debug] load of plct-openqa-ruyisdk-ide/products/plct-openqa-ruyisdk-ide/needles/ruyi-ide-mainmenu.png took 0.51 seconds
+[0m[37m[2025-01-25T07:08:51.379 UTC] [debug] WARNING: check_asserted_screen took 0.52 seconds for 1 candidate needles - make your needles more specific
+[0m[37m[2025-01-25T07:08:51.380 UTC] [debug] no match: 47999.5s, best candidate: ruyi-ide-mainmenu (0.00)
+[0m[37m[2025-01-25T07:08:51.862 UTC] [debug] no change: 47998.5s
+[0m[37m[2025-01-25T07:08:52.865 UTC] [debug] no match: 47997.5s, best candidate: ruyi-ide-mainmenu (0.00)
+[0m[37m[2025-01-25T07:08:53.864 UTC] [debug] no change: 47996.5s
+[0m[37m[2025-01-25T07:08:54.915 UTC] [debug] no match: 47995.5s, best candidate: ruyi-ide-mainmenu (0.00)
+[0m[32m[2025-01-25T07:08:56.139 UTC] [debug] >>> testapi::_handle_found_needle: found ruyi-ide-mainmenu, similarity 1.00 @ 110/201
+[0m[37m[2025-01-25T07:08:56.140 UTC] [debug] Login test completed.
+[0m[37m[2025-01-25T07:08:56.141 UTC] [debug] ||| finished launch_ruyi_ide tests (runtime: 128 s)
+[0m[37m[2025-01-25T07:08:56.142 UTC] [debug] stopping autotest process 48699
+[0m[37m[2025-01-25T07:08:56.146 UTC] [debug] [autotest] process exited: 0
+[0m[37m[2025-01-25T07:08:56.246 UTC] [debug] done with autotest process
+[0m[37m[2025-01-25T07:08:56.247 UTC] [debug] stopping command server 48690 because test execution ended
+[0m[37m[2025-01-25T07:08:56.247 UTC] [debug] isotovideo: informing websocket clients before stopping command server: http://127.0.0.1:20023/qxk8YZFufEGNErh1/broadcast
+[0m[37m[2025-01-25T07:08:56.254 UTC] [debug] commands process exited: 0
+[0m[37m[2025-01-25T07:08:56.354 UTC] [debug] done with command server
+[0m[37m[2025-01-25T07:08:56.354 UTC] [debug] isotovideo done
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] EVENT {"data":{"offset":0,"qom-path":"\/machine\/unattached\/device[7]\/rtc"},"event":"RTC_CHANGE","timestamp":{"microseconds":713001,"seconds":1737788798}}
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] EVENT {"data":{"offset":0,"qom-path":"\/machine\/unattached\/device[7]\/rtc"},"event":"RTC_CHANGE","timestamp":{"microseconds":959045,"seconds":1737788798}}
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] EVENT {"data":{"path":"\/machine\/peripheral-anon\/device[2]\/virtio-backend"},"event":"NIC_RX_FILTER_CHANGED","timestamp":{"microseconds":471377,"seconds":1737788803}}
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] EVENT {"data":{"offset":0,"qom-path":"\/machine\/unattached\/device[7]\/rtc"},"event":"RTC_CHANGE","timestamp":{"microseconds":506004,"seconds":1737788837}}
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] QEMU status is not 'shutdown', it is 'running'
+[0m[37m[2025-01-25T07:08:56.355 UTC] [debug] backend shutdown state: 
+[0m[33m[2025-01-25T07:08:56.355 UTC] [info] ::: OpenQA::Qemu::Proc::save_state: Saving QEMU state to qemu_state.json
+[0m[37m[2025-01-25T07:08:57.470 UTC] [debug] Passing remaining frames to the video encoder
+[0m[37m[2025-01-25T07:08:57.502 UTC] [debug] Waiting for video encoder to finalize the video
+[0m[37m[2025-01-25T07:08:57.502 UTC] [debug] The built-in video encoder (pid 48709) terminated
+[0m[37m[2025-01-25T07:08:57.502 UTC] [debug] QEMU: qemu-system-x86_64: terminating on signal 15 from pid 48704 (/usr/bin/isotovideo: backend)
+[0m[37m[2025-01-25T07:08:57.503 UTC] [debug] sending magic and exit
+[0m[37m[2025-01-25T07:08:57.503 UTC] [debug] received magic close
+[0m[37m[2025-01-25T07:08:57.511 UTC] [debug] backend process exited: 0
+[0m[37m[2025-01-25T07:08:57.612 UTC] [debug] stopping backend process 48704
+[0m[37m[2025-01-25T07:08:57.612 UTC] [debug] done with backend process
+[0m48652: EXIT 0
+[2025-01-25T07:08:57.624470Z] [info] Isotovideo exit status: 0
+[2025-01-25T07:08:58.258374Z] [info] +++ worker notes +++
+[2025-01-25T07:08:58.258591Z] [info] End time: 2025-01-25 07:08:58
+[2025-01-25T07:08:58.258627Z] [info] Result: done
+[2025-01-25T07:08:58.307879Z] [info] Uploading video.ogv
+[2025-01-25T07:08:59.677920Z] [info] Uploading vars.json
+[2025-01-25T07:09:00.745975Z] [info] Uploading autoinst-log.txt
