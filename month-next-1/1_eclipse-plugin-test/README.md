@@ -49,9 +49,9 @@
 
 > 严重度：minor
 
-<img src="pics/7-uninstall-not-easy-to-find.jpg" height="100" alt="7-uninstall-not-easy-to-find" />
-
 可以像 Android SDK 那样，反选再 save 则移除
+
+<img src="pics/7-uninstall-not-easy-to-find.jpg" height="100" alt="7-uninstall-not-easy-to-find" />
 
 ### 8. ruyi venv 有两个 manual
 
@@ -60,7 +60,7 @@
 <img src="pics/8-ruyi-venv-2manual.jpg" height="100" alt="8-ruyi-venv-2manual" />
 <img src="pics/8-ruyi-venv-2manual-2.jpg" height="100" alt="8-ruyi-venv-2manual-2" />
 
-### 9. venv 不检测当前目录，只能写在项目根目录
+### 9. venv 不检测当前目录，只能写在项目根目录才会被检测到
 
 > 严重度：major
 
