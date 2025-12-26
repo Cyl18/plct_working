@@ -3,7 +3,7 @@
 ## 总结
 
 新闻测试通过，其它子系统有部分问题。  
-共有 4 个 major 问题，6 个 minor 问题，1 个 consistency 问题。  
+共有 1 个 blocking 问题，3 个 major 问题，5 个 minor 问题，1 个 consistency 问题。  
 
 ## 详细说明
 
@@ -49,13 +49,13 @@
 
 > 严重度：minor
 
-可以像 Android SDK 那样，反选再 save 则移除
+可以像 Android SDK 那样，反选再 save 则移除，或者加一个 uninstall
 
 <img src="pics/7-uninstall-not-easy-to-find.jpg" height="100" alt="7-uninstall-not-easy-to-find" />
 
 ### 8. ruyi venv 有两个 manual
 
-> 严重度：minor
+> ~~严重度：minor~~ ruyi 问题
 
 <img src="pics/8-ruyi-venv-2manual.jpg" height="100" alt="8-ruyi-venv-2manual" />
 <img src="pics/8-ruyi-venv-2manual-2.jpg" height="100" alt="8-ruyi-venv-2manual-2" />
@@ -75,7 +75,9 @@
 
 ### 11. venv CDT 配置不易用
 
-> 严重度：major
+> 严重度：blocking
+
+// need verify
 
 新建一个 C/C++ 项目，可以成功覆盖：
 
