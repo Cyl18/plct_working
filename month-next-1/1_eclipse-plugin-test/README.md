@@ -1,5 +1,7 @@
 # 测试报告
 
+版本 [4019d74](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/commit/4019d74407718d8c77f8dc56741ea6794e5a847e)  
+
 ## 总结
 
 新闻测试通过，其它子系统有部分问题。  
