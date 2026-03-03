@@ -1,0 +1,139 @@
+<!-- markdownlint-disable -->
+
+zstd -d /home/cyan/ArchLinux-VF2_6.12_v6.0.0-cwt25.img.zst --stdout | sudo dd 
+  of=/dev/sdb bs=4M status=progress oflag=sync
+
+  洗板水味道 系统更新着就全系统 io error了
+
+  https://forum.rvspace.org/t/arch-linux-image-for-visionfive-2/1459
+
+```
+warning: cannot resolve "libicuuc.so=76-64", a dependency of "freerdp"
+warning: cannot resolve "freerdp", a dependency of "krdp"
+warning: cannot resolve "krdp", a dependency of "plasma-meta"
+:: The following package cannot be upgraded due to unresolvable dependencies:
+      plasma-meta
+
+:: Do you want to skip the above package for this upgrade? [y/N] 
+```
+ssh copy key
+
+pacman -Sy plasma
+
+sudo systemctl enable --now sddm
+
+nano /etc/locale.gen
+locale-gen
+
+xfce4 xorg-server
+
+   1  pacman -Syyu
+    2  pacman-mirrors
+    3  pacman -S relector
+    4  pacman -S reflector
+    5  ip link
+    6  ip add
+    7  nano /etc/ssh/sshd_config
+    8  vi /etc/ssh/sshd_config
+    9  systemctl restart sshd
+   10  pacman -Sy nano
+   11  export https_proxy=http://192.168.0.237:60000
+   12  pacman -Sy nano
+   13  cat /proc/cmdline
+   14  printenv bootargs
+   15  cat /proc/cmdline
+   16  ls /sys/class/drm && dmesg | grep -i drm
+   17  nano /boot/extlinux/extlinux.conf <-- 解决2k 60 闪屏 调成了720p
+   18  nano .ssh/authorized_keys
+   19  chmod 600 .ssh/authorized_keys
+   20  chmod -R 600 .ssh
+   21  reboot
+   22  export https_proxy=http://192.168.0.237:60000
+   23  lsblk
+   24  df -h
+   25  sudo btrfs filesystem resize max /
+   26  pacman -Sy plasma-meta
+   27  pacman -Sy plasma-meta
+   28  pacman -Sy plasma-meta
+   29  pacman -Sy plasma
+   30  df -h
+   31  sudo btrfs filesystem resize max /
+   32  fdisk /dev/mmcblk1p4
+   33  cfdisk /dev/mmcblk1p4
+   34  cfdisk /dev/mmcblk1p
+   35  cfdisk /dev/mmcblk1 <-- 硬盘扩容
+   36  sudo btrfs filesystem resize max /
+   37  pacman -Sy plasma-meta
+   38  pacman -Sy plasma <-- plasma崩溃 没看log
+   39  nano /boot/extlinux/extlinux.conf
+   40  cat /proc/cmdline
+   41  reboot
+   42  systemctl enabble --now sddm
+   43  systemctl enable --now sddm
+   44  pacman -S xfce4
+   45  rm /var/lib/pacman/db/lck
+   46  rm /var/lib/pacman/db.lck
+   47  pacman -S xfce4
+   48  export https_proxy=http://192.168.0.237:60000
+   49  pacman -S xfce4
+   50  pacman -Syyu
+   51  reboot
+   52  glxinfo
+   53  LIBGL_DEBUG=verbose glxinfo -B
+   54  startxfce4
+   55  weston
+   56  weston
+   57  weston
+   58  exit
+   59  cd pkgs/
+   60  ls
+   61  lsmod | grep pvr
+   62  dmesg | grep -i pvr
+   63  ls /dev/dri
+   64  ls /usr/lib/dri | grep pvr
+   65  LIBGL_DEBUG=verbose glxinfo -B
+   66  pacman -Sy mesa-utils
+   67  export https_proxy=http://192.168.0.237:60000
+   68  pacman -Sy mesa-utils
+   69  LIBGL_DEBUG=verbose glxinfo -B
+   70  DISPLAY=:1 LIBGL_DEBUG=verbose glxinfo -B
+   71  DISPLAY=:2 LIBGL_DEBUG=verbose glxinfo -B
+   72  DISPLAY=:1 LIBGL_DEBUG=verbose glxinfo -B
+   73  DISPLAY=:0 LIBGL_DEBUG=verbose glxinfo -B
+   74  cat /var/log/Xorg.0.log | grep -E "DRI|glamor|modeset"
+   75  pacman -Sy mesa-utils
+   76  pacman -Rs xfce4
+   77  pacman -S weston
+   78  pacman -Ss libdisplay-info
+   79  pacman -S weston
+   80  pacman -S sudo --overwrite '*'
+   81  rm -rf /var/lib/pacman/local/sudo-1.9.17.p2-2
+   82  pacman -S sudo
+   83  pacman -Qk | grep warning
+   84  pacman -S weston
+   85  pacman -Syyu weston
+   86  weston
+   87  pacman -S libdisplay-info
+   88  ldd /usr/bin/weston
+   89  ls /usr/lib/libdisplay-info.so.2
+   90  pacman -Syu weston libdisplay-info
+   91  ln -s /usr/lib/libdisplay-info.so.3 /usr/lib/libdisplay-info.so.2
+   92  weston
+   93  weston
+   94  weston
+   95  es2_info
+   96  glxinfo -B
+   97  pacman -S fastfetch
+   98  export https_proxy=http://192.168.0.237:60000
+   99  pacman -S fastfetch
+  100  fastfetch
+  101  eglinfo | grep -E "Vendor|Device|Renderer"
+  102  weston-info
+  103  pacman -S weston-info
+  104  eglinfo | grep -i llvmp
+  105  reboot
+  106  eglinfo
+  107  eglinfo | grep -i llvmpipe
+  108  journalctl --user -b | grep -i drm
+  109  exit
+  110  history

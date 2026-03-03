@@ -1,0 +1,178 @@
+source /home/cyan/ruyi-litester/.venv/bin/activate                         
+➜  ruyi-litester source /home/cyan/ruyi-litester/.venv/bin/activate
+(.venv) ➜  ruyi-litester git:(feat/ruyi-venv) ✗ cd /tmp
+(.venv) ➜  /tmp venv_path=/tmp/rit-ruyi-basic-ruyi-venv-single
+
+(.venv) ➜  /tmp RUYI_DEBUG= ruyi install gnu-plct >/dev/null 2>&1
+RUYI_DEBUG= ruyi install gnu-milkv-milkv-duo-musl-bin >/dev/null 2>&1
+(.venv) ➜  /tmp RUYI_DEBUG= ruyi venv --toolchain gnu-plct --toolchain gnu-milkv-milkv-duo-musl-bin --sysroot-from gnu-milkv-milkv-duo-musl-bin milkv-duo "$venv_path"
+info: Creating a Ruyi virtual environment at /tmp/rit-ruyi-basic-ruyi-venv-single...
+info: The virtual environment is now created.
+
+You may activate it by sourcing the appropriate activation script in the
+bin directory, and deactivate by invoking `ruyi-deactivate`.
+
+A fresh sysroot/prefix is also provisioned in the virtual environment.
+It is available at the following path:
+
+    /tmp/rit-ruyi-basic-ruyi-venv-single/sysroot
+
+The virtual environment also comes with ready-made CMake toolchain file
+and Meson cross file. Check the virtual environment root for those;
+comments in the files contain usage instructions.
+
+(.venv) ➜  /tmp cd ./rit-ruyi-basic-ruyi-venv-single/
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single ls
+bin
+meson-cross.ini
+meson-cross.riscv64-plct-linux-gnu.ini
+meson-cross.riscv64-unknown-linux-musl.ini
+ruyi-cache.v2.toml
+ruyi-venv.toml
+sysroot
+sysroot.riscv64-plct-linux-gnu
+sysroot.riscv64-unknown-linux-musl
+toolchain.cmake
+toolchain.riscv64-plct-linux-gnu.cmake
+toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single cd sysroot
+(.venv) ➜  sysroot ls
+etc  lib  lib32  lib64  sbin  usr  var
+(.venv) ➜  sysroot cd ..
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single readlink sysroot
+sysroot.riscv64-plct-linux-gnu
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single cd ..
+(.venv) ➜  /tmp RUYI_DEBUG= ruyi venv --toolchain gnu-milkv-milkv-duo-musl-bin --sysroot-from gnu-milkv-milkv-duo-musl-bin milkv-duo venv2        
+info: Creating a Ruyi virtual environment at venv2...
+info: The virtual environment is now created.
+
+You may activate it by sourcing the appropriate activation script in the
+bin directory, and deactivate by invoking `ruyi-deactivate`.
+
+A fresh sysroot/prefix is also provisioned in the virtual environment.
+It is available at the following path:
+
+    /tmp/venv2/sysroot
+
+The virtual environment also comes with ready-made CMake toolchain file
+and Meson cross file. Check the virtual environment root for those;
+comments in the files contain usage instructions.
+
+(.venv) ➜  /tmp cd venv2
+(.venv) ➜  venv2 readlink venv2
+(.venv) ➜  venv2 readlink sysroot
+sysroot.riscv64-unknown-linux-musl
+(.venv) ➜  venv2 ls
+bin
+meson-cross.ini
+meson-cross.riscv64-unknown-linux-musl.ini
+ruyi-cache.v2.toml
+ruyi-venv.toml
+sysroot
+sysroot.riscv64-unknown-linux-musl
+toolchain.cmake
+toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  venv2 cd ./sysroot.riscv64-unknown-linux-musl/
+(.venv) ➜  sysroot.riscv64-unknown-linux-musl ls
+lib  lib64  lib64v0p7_xthead  lib64v_xthead  lib64xthead  usr
+(.venv) ➜  sysroot.riscv64-unknown-linux-musl ..
+(.venv) ➜  venv2 ..
+(.venv) ➜  /tmp ls
+code-66b77df8-eb16-4a14-9671-14fa6553314c
+cyan-code-zsh
+pyright-4480-JT2efADq5gSK
+python-languageserver-cancellation
+rit-ruyi-basic-ruyi-venv-single
+sddm-:0-mEaJUF
+sddm-auth52d15f61-da31-4b2b-a129-120e7107b7d3
+systemd-private-1d89316495c14bdf877e5554fb541932-ModemManager.service-BoqqdD
+systemd-private-1d89316495c14bdf877e5554fb541932-systemd-logind.service-NyMyVa
+systemd-private-1d89316495c14bdf877e5554fb541932-systemd-timesyncd.service-jVPDGC
+systemd-private-1d89316495c14bdf877e5554fb541932-upower.service-mdihiL
+venv2
+vmware-root_787-4290625459
+vscode-typescript1000
+(.venv) ➜  /tmp cd ./rit-ruyi-basic-ruyi-venv-single/
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single ls
+bin
+meson-cross.ini
+meson-cross.riscv64-plct-linux-gnu.ini
+meson-cross.riscv64-unknown-linux-musl.ini
+ruyi-cache.v2.toml
+ruyi-venv.toml
+sysroot
+sysroot.riscv64-plct-linux-gnu
+sysroot.riscv64-unknown-linux-musl
+toolchain.cmake
+toolchain.riscv64-plct-linux-gnu.cmake
+toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single cd ./sysroot.riscv64-plct-linux-
+gnu/
+(.venv) ➜  sysroot.riscv64-plct-linux-gnu ls
+etc  lib  lib32  lib64  sbin  usr  var
+(.venv) ➜  sysroot.riscv64-plct-linux-gnu cd ..
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single ..
+(.venv) ➜  /tmp ls
+code-66b77df8-eb16-4a14-9671-14fa6553314c
+cyan-code-zsh
+pyright-4480-JT2efADq5gSK
+python-languageserver-cancellation
+rit-ruyi-basic-ruyi-venv-single
+sddm-:0-mEaJUF
+sddm-auth52d15f61-da31-4b2b-a129-120e7107b7d3
+systemd-private-1d89316495c14bdf877e5554fb541932-ModemManager.service-BoqqdD
+systemd-private-1d89316495c14bdf877e5554fb541932-systemd-logind.service-NyMyVa
+systemd-private-1d89316495c14bdf877e5554fb541932-systemd-timesyncd.service-jVPDGC
+systemd-private-1d89316495c14bdf877e5554fb541932-upower.service-mdihiL
+venv2
+vmware-root_787-4290625459
+vscode-typescript1000
+(.venv) ➜  /tmp cd venv2
+(.venv) ➜  venv2 ls
+bin
+meson-cross.ini
+meson-cross.riscv64-unknown-linux-musl.ini
+ruyi-cache.v2.toml
+ruyi-venv.toml
+sysroot
+sysroot.riscv64-unknown-linux-musl
+toolchain.cmake
+toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  venv2 readlink sysroot
+sysroot.riscv64-unknown-linux-musl
+(.venv) ➜  venv2 ll
+total 28K
+drwxr-xr-x 2 cyan cyan 4.0K Jan 29 23:01 bin
+lrwxrwxrwx 1 cyan cyan   42 Jan 29 23:01 meson-cross.ini -> meson-cross.riscv64-unknown-linux-musl.ini
+-rw-r--r-- 1 cyan cyan  942 Jan 29 23:01 meson-cross.riscv64-unknown-linux-musl.ini
+-rw-r--r-- 1 cyan cyan 7.8K Jan 29 23:01 ruyi-cache.v2.toml
+-rw-r--r-- 1 cyan cyan  432 Jan 29 23:01 ruyi-venv.toml
+lrwxrwxrwx 1 cyan cyan   34 Jan 29 23:01 sysroot -> sysroot.riscv64-unknown-linux-musl
+drwxr-xr-x 8 cyan cyan 4.0K Sep 11  2024 sysroot.riscv64-unknown-linux-musl
+lrwxrwxrwx 1 cyan cyan   42 Jan 29 23:01 toolchain.cmake -> toolchain.riscv64-unknown-linux-musl.cmake
+-rw-r--r-- 1 cyan cyan  691 Jan 29 23:01 toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  venv2 cd ./sysroot.riscv64-unknown-linux-musl/
+(.venv) ➜  sysroot.riscv64-unknown-linux-musl ls
+lib  lib64  lib64v0p7_xthead  lib64v_xthead  lib64xthead  usr
+(.venv) ➜  sysroot.riscv64-unknown-linux-musl ..
+(.venv) ➜  venv2 ..
+(.venv) ➜  /tmp RUYI_DEBUG= ruyi venv --toolchain gnu-plct --toolchain gnu-milkv-milkv-duo-musl-bin --sysroot-from gnu-milkv-milkv-duo-musl-bin milkv-duo "$venv_path"
+(.venv) ➜  /tmp cd ./rit-ruyi-basic-ruyi-venv-single/
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single ll
+total 52K
+drwxr-xr-x 2 cyan cyan 4.0K Jan 29 23:01 bin
+lrwxrwxrwx 1 cyan cyan   38 Jan 29 23:01 meson-cross.ini -> meson-cross.riscv64-plct-linux-gnu.ini
+-rw-r--r-- 1 cyan cyan 1.3K Jan 29 23:01 meson-cross.riscv64-plct-linux-gnu.ini
+-rw-r--r-- 1 cyan cyan 1.3K Jan 29 23:01 meson-cross.riscv64-unknown-linux-musl.ini
+-rw-r--r-- 1 cyan cyan  18K Jan 29 23:01 ruyi-cache.v2.toml
+-rw-r--r-- 1 cyan cyan  599 Jan 29 23:01 ruyi-venv.toml
+lrwxrwxrwx 1 cyan cyan   30 Jan 29 23:01 sysroot -> sysroot.riscv64-plct-linux-gnu
+drwxr-xr-x 9 cyan cyan 4.0K Sep 20 23:42 sysroot.riscv64-plct-linux-gnu
+drwxr-xr-x 8 cyan cyan 4.0K Sep 11  2024 sysroot.riscv64-unknown-linux-musl
+lrwxrwxrwx 1 cyan cyan   38 Jan 29 23:01 toolchain.cmake -> toolchain.riscv64-plct-linux-gnu.cmake
+-rw-r--r-- 1 cyan cyan  805 Jan 29 23:01 toolchain.riscv64-plct-linux-gnu.cmake
+-rw-r--r-- 1 cyan cyan  821 Jan 29 23:01 toolchain.riscv64-unknown-linux-musl.cmake
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single RUYI_DEBUG= ruyi venv --toolchain gnu-plct --toolchain gnu-milkv-milkv-duo-musl-bin --sysroot-from gnu-milkv-milkv-duo-musl-bin milkv-duo "$venv_path"
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single git add -A
+fatal: not a git repository (or any of the parent directories): .git
+(.venv) ➜  rit-ruyi-basic-ruyi-venv-single 

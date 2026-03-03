@@ -1,0 +1,36 @@
+    1  dnf groupinstall mate-desktop
+    2  dnf groupinstall "Mate Desktop"
+    3  dnf install mate-desktop
+    4  sudo systemctl set-default graphical.target
+    5  reboot
+    6  systemctl enable gdm
+    7  systemctl enable lightdm
+    8  dnf install mate-desktop
+    9  dnf list installed | grep -E "gdm|lightdm|sddm"
+   10  dnf install gdm
+   11  dnf install lightdm lightdm-gtk
+   12  systemctl enable lightdm
+   13  systemctl set-default graphical.target
+   14  reboot
+   15  journalctl lddm
+   16  journalctl --help
+   17  journalctl -xeu lightdm
+   18  cat /var/log/lightdm/lightdm.log
+   19  cat /var/log/lightdm/x-0.log
+   20  startx
+   21  dnf install mate-desktop-environment
+   22  dnf install xorg-x11-server-Xorg xorg-x11-xinit xorg-x11-drivers
+   23  startx
+   24  reboot
+   25  cat /var/log/lightdm/x-0.log
+   26  dnf install mesa-dri-drivers mesa-libEGL mesa-libGL libdrm xorg-x11-drv-modesetting xorg-x11-drv-vesa xorg-x11-drv-evdev
+   27  dnf install mesa-dri-drivers mesa-libEGL mesa-libGL libdrm xorg-x11-drv-modesetting xorg-x11-drv-evdev
+   28  cat /var/log/lightdm/x-0.log
+   29  startx
+   30  which mate-session
+   31  dnf install mate-session-manager mate-panel caja marco
+   32  startx
+   33  echo "exec mate-session" > ~/.xinitrc
+   34  chmod +x ~/.xinitrc
+   35  startx
+   36  history
