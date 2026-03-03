@@ -1,4 +1,4 @@
-# 折腾 VisionFive 2：在 Arch Linux RISC-V 上跑起 Weston + 硬件加速
+# 折腾 VisionFive 2：在 Arch Linux RISC-V 上跑起 Weston + 硬件加速 GPU
 
 最近拿到了一块 VisionFive 2（以下简称 VF2），想着在上面装个 Arch Linux 玩玩，顺手把桌面环境也搞起来。结果折腾了挺久，踩了不少坑，记录一下。
 
@@ -172,6 +172,9 @@ Execute failed: java.io.IOException: Cannot run program "riscv64-linux-gnu-strip
 
 这个问题暂时没解决，Minecraft 就先搁着了。
 
+> 编译的时候看到频率到 750MHz 了，不清楚什么问题
+> echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+> 也许 CPU 调度可以解决，但温度也得先满足
 
 ## 总结
 
