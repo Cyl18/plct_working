@@ -1,5 +1,7 @@
 # 折腾 VisionFive 2：在 Arch Linux RISC-V 上跑起 Weston + 硬件加速 GPU
 
+> 文章部分由 Claude 整理编写
+
 最近拿到了一块 VisionFive 2（以下简称 VF2），想着在上面装个 Arch Linux 玩玩，顺手把桌面环境也搞起来。结果折腾了挺久，踩了不少坑，记录一下。
 
 ## 刷镜像
